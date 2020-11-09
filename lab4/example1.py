@@ -4,6 +4,6 @@ sum = number1 + number2
 if sum<10:
   print(sum)
 else:
-  x = (sum//100) + sum%10
+  x = sum%10
   print(x)
 
