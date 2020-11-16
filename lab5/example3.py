@@ -1,10 +1,13 @@
-number1 = list(input("Write number 1"))
-number2 = list(input("Write number 2"))
+number1 = int(input("Write number 1 "))
+number2 = int(input("Write number 2 "))
 count = 0
-number_1 = sorted(number1, reverse=True)
-number_2 = sorted(number2, reverse= True)
-for i in range(2):
-  if number_1[:] == number_2[:]:
-    count = count +1
+while number1>0 and number2>0:
+  if number1%10 == number2%10:
+    count = count + 1
+  number1 = number1 // 10
+  number2 = number2 // 10
+  
 print(count)
+
+
 
