@@ -1,3 +1,8 @@
 books = ["ULYSSES", "ANIMAL FARM", "BRAVE NEW WORLD", "ENDER'S GAME"]
-book_dict = {}
-book_dict.update()
+bookdict = {}
+for name in books:
+  lenght = len(name)
+  unique = len(list(set(name)))
+  comb = (lenght, unique)
+  bookdict[name] = comb
+print(bookdict)
