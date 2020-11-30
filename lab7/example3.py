@@ -3,7 +3,7 @@ bookdict = {}
 for name in books:
   lenght = len(name)
   unique = len(list(set(name)))
-  average = (lenght + unique) / 2
+  average = (lenght + unique) // 2
   comb = (lenght, unique, average)
   bookdict[name] = comb
 print(bookdict)
