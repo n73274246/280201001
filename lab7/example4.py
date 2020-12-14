@@ -1,13 +1,11 @@
-name = input("Write name ")
-salary = input("Write salary ")
+name = list(input("Write name "))
+salary = list(input("Write salary "))
 employees = {name: salary}
-count = 0
-for employee in employees: 
+for i in range(5): 
  name = input("Write name ")
  salary = input("Write salary ")
- count = count + 1
- if count == 5:
-   break
+
+
 
 
 
