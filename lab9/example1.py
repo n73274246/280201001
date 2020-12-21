@@ -4,6 +4,6 @@ def harmonic(n):
   else:
     return (1/n) + harmonic(n-1)
   
-x = 4
+x = 5
 h = harmonic(x)
 print(h)
