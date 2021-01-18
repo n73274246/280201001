@@ -8,9 +8,9 @@ def binarySearch(a_list,item):
     elif item < a_list[mid]:
       index = binarySearch(a_list[:mid],item)
       return index
-    else:
+    elif item> a_list[mid]:
       index = binarySearch(a_list[mid+1:],item)
       return index+mid+1
 
-mylist=[22,8,12,27,38]
-print(binarySearch(mylist,38))
+mylist=[8,12,22,27,38]
+print(binarySearch(mylist,22))
